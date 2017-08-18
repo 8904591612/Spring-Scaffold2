@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="layout">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<title>Show Payment_reg</title>
+</head>
+<body>
+	<div layout:fragment="content">
+		<h1>Show Payment_reg</h1>
+		<hr />
+		<div class="form-group"> 
+			<label for="id">Id: </label>  
+			<span th:text="${payment_reg.id}"></span> 
+		</div> 
+		<div class="form-group"> 
+			<label for="organisers">Organisers: </label>  
+			<span th:text="${payment_reg.organisers}"></span> 
+		</div> 
+		<div class="form-group"> 
+			<label for="transaction_id">Transaction_id: </label>  
+			<span th:text="${payment_reg.transaction_id}"></span> 
+		</div> 
+		<div class="form-group"> 
+			<label for="amount">Amount: </label>  
+			<span th:text="${payment_reg.amount}"></span> 
+		</div> 
+		<div class="form-group"> 
+			<label for="sbi_ref_no">Sbi_ref_no: </label>  
+			<span th:text="${payment_reg.sbi_ref_no}"></span> 
+		</div> 
+		
+		<div class="form-group"> 
+			<label for="status">Status: </label>  
+			<span th:text="${payment_reg.status}"></span> 
+		</div> 
+		<div class="form-group"> 
+			<label for="status_desc">Status_desc: </label>  
+			<span th:text="${payment_reg.status_desc}"></span> 
+		</div> 
+		<div class="form-group"> 
+			<label for="user_desc">User_desc: </label>  
+			<span th:text="${payment_reg.user_desc}"></span> 
+		</div> 
+		
+		<div class="form-group"> 
+			<label for="currency">Currency: </label>  
+			<span th:text="${payment_reg.currency}"></span> 
+		</div> 
+
+		<a th:href="@{/payment_regs/{id}/edit(id = ${payment_reg.id})}">Edit this record</a> <br/>
+		<a href="#">Delete this record</a> <br/>
+		<a th:href="@{/payment_regs}">Back to list Payment_reg</a> <br/>
+	</div>
+</body>
+</html>

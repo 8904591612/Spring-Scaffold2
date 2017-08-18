@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	  layout:decorator="layout">
+<head>
+ 	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+     <script src="src/main/resources/templates/js/payment_reg.js"></script> 
+    
+</head>
+<body>
+
+	<div layout:fragment="content">
+		<div class="panel panel-default" id="scrollPanel">
+  			<div class="panel-heading">Panel Heading</div>
+  				<div class="panel-body">Panel Content
+  						<div class="table-responsive">
+  							<table class="table" id="scrollTable">
+  								<thead>
+									<tr>
+										<th>Id</th> 
+										<th>Organisers</th> 
+										<th>Transaction_id</th> 
+										<th>Amount</th> 
+										<th>Sbi_ref_no</th> 
+					
+										<th>Status</th> 
+										<th>Status_desc</th> 
+										<th>User_desc</th> 
+					
+										<th>Currency</th> 
+										<th>Action</th>
+									</tr>
+								</thead>
+								<tbody>
+								
+								
+								</tbody>
+    
+  							</table>
+						</div>
+  				
+  			   </div>
+		</div>
+	
+		
+	
+	
+		<!-- <h1>List Payment_reg</h1>
+		<hr />
+		<a th:href="@{/payment_regs/new}">New Payment_reg</a><br/><br/>
+		
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Id</th> 
+					<th>Organisers</th> 
+					<th>Transaction_id</th> 
+					<th>Amount</th> 
+					<th>Sbi_ref_no</th> 
+					
+					<th>Status</th> 
+					<th>Status_desc</th> 
+					<th>User_desc</th> 
+					
+					<th>Currency</th> 
+					<th>Action</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="payment_reg : ${listPayment_reg}">
+					<td th:text="${payment_reg.id}"></td> 
+					<td th:text="${payment_reg.organisers}"></td> 
+					<td th:text="${payment_reg.transaction_id}"></td> 
+					<td th:text="${payment_reg.amount}"></td> 
+					<td th:text="${payment_reg.sbi_ref_no}"></td> 
+				
+					<td th:text="${payment_reg.status}"></td> 
+					<td th:text="${payment_reg.status_desc}"></td> 
+					<td th:text="${payment_reg.user_desc}"></td> 
+					
+					<td th:text="${payment_reg.currency}"></td> 
+					<td>
+							<a th:href="@{/payment_regs/{id}(id = ${payment_reg.id})}">Show</a> 
+					 		<a th:href="@{/payment_regs/{id}/edit(id = ${payment_reg.id})}">Edit</a> 
+							<a href="#">Destroy</a> 
+					</td>
+				</tr>
+			</tbody>
+		</table> -->
+	</div>
+	
+	
+	
+
+
+</body>
+</html>
