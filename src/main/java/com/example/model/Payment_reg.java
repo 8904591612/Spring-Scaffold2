@@ -34,7 +34,7 @@ public class Payment_reg implements Serializable {
     @Column(name = "organisers")
     private String organisers;
 
-  /*  @Column(name = "transaction_id")
+   @Column(name = "transaction_id")
     private String transaction_id;
 
     @Column(name = "amount")
@@ -43,8 +43,8 @@ public class Payment_reg implements Serializable {
     @Column(name = "sbi_ref_no")
     private String sbi_ref_no;
 
-    @Column(name = "payment_date")
-    private String payment_date;
+    /*@Column(name = "payment_date")
+    private String payment_date;*/
 
     @Column(name = "status")
     private String status;
@@ -59,20 +59,20 @@ public class Payment_reg implements Serializable {
     private String enc_data_received;
 
     @Column(name = "currency")
-    private String currency;*/
+    private String currency;
 
 	public void setId(Integer id) {this.id = id;}
 	public Integer getId() {return id;}
 	public void setOrganisers(String organisers) {this.organisers = organisers;}
 	public String getOrganisers() {return organisers;}
-	/*public void setTransaction_id(String transaction_id) {this.transaction_id = transaction_id;}
-	public String getTransaction_id() {return transaction_id;}*/
-	/*public void setAmount(String amount) {this.amount = amount;}
+	public void setTransaction_id(String transaction_id) {this.transaction_id = transaction_id;}
+	public String getTransaction_id() {return transaction_id;}
+	public void setAmount(String amount) {this.amount = amount;}
 	public String getAmount() {return amount;}
 	public void setSbi_ref_no(String sbi_ref_no) {this.sbi_ref_no = sbi_ref_no;}
 	public String getSbi_ref_no() {return sbi_ref_no;}
-	public void setPayment_date(String payment_date) {this.payment_date = payment_date;}
-	public String getPayment_date() {return payment_date;}
+	/*public void setPayment_date(String payment_date) {this.payment_date = payment_date;}
+	public String getPayment_date() {return payment_date;}*/
 	public void setStatus(String status) {this.status = status;}
 	public String getStatus() {return status;}
 	public void setStatus_desc(String status_desc) {this.status_desc = status_desc;}
@@ -82,7 +82,7 @@ public class Payment_reg implements Serializable {
 	public void setEnc_data_received(String enc_data_received) {this.enc_data_received = enc_data_received;}
 	public String getEnc_data_received() {return enc_data_received;}
 	public void setCurrency(String currency) {this.currency = currency;}
-	public String getCurrency() {return currency;}*/
+	public String getCurrency() {return currency;}
 
 	
 	

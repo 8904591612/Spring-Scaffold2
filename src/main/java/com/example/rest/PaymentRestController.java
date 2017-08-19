@@ -17,7 +17,7 @@ public class PaymentRestController {
 	@Autowired
 	private Payment_regRepository payment_regRepository;
 	
-	@RequestMapping(value="/rest/payment_reg/index",method = RequestMethod.POST)
+	@RequestMapping(value="/rest/payment_reg/index",method = RequestMethod.GET)
 	public List<Payment_reg> getData(@RequestParam(value="endlessScrollingIndex",required=true) int endlessScrollingIndex ){
 		
 		int to =endlessScrollingIndex+10;

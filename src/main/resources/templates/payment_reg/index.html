@@ -7,15 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-     <script src="src/main/resources/templates/js/payment_reg.js"></script> 
+      <script src="/page_js/payment_reg.js"></script> 
     
 </head>
 <body>
 
 	<div layout:fragment="content">
-		<div class="panel panel-default" id="scrollPanel">
-  			<div class="panel-heading">Panel Heading</div>
-  				<div class="panel-body">Panel Content
+		<div id="scrollPanel1" style=" height: 300px;">
+			<div class="panel panel-default" id="scrollPanel"  >
+  				<div class="panel-heading">Panel Heading</div>
+  					<div class="panel-body" >
+  							<div id="scrollablePanel" style="overflow-y: scroll; height: 100px;">
   						<div class="table-responsive">
   							<table class="table" id="scrollTable">
   								<thead>
@@ -41,12 +43,12 @@
     
   							</table>
 						</div>
-  				
-  			   </div>
+  					</div>
+  			   	</div>
 		</div>
-	
+		</div>
 		
-	
+	<button>Button</button>
 	
 		<!-- <h1>List Payment_reg</h1>
 		<hr />
