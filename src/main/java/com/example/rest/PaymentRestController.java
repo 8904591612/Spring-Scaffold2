@@ -19,7 +19,11 @@ public class PaymentRestController {
 	
 	@RequestMapping(value="/rest/payment_reg/index",method = RequestMethod.GET)
 	public List<Payment_reg> getData(@RequestParam(value="endlessScrollingIndex",required=true) int endlessScrollingIndex ){
-		
+		if(endlessScrollingIndex>=payment_regRepository.findAll().size()){
+			return payment_regRepository.findAll().subList(endlessScrollingIndex-10,endlessScrollingIndex-10 );
+			
+			
+		}
 		int to =endlessScrollingIndex+10;
 		if(to>payment_regRepository.findAll().size()){
 			

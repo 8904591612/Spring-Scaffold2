@@ -5,14 +5,15 @@ $(document).ready(function(){
 	$('#scrollablePanel').on('scroll', function(){
 		
 		if($(this).scrollTop() + $(this).innerHeight() >= $(this)[0].scrollHeight) {
-			alert("namah Shivaya");
+		
 			load_data();
 		}
 		
 		
 	});
 	
-})
+});
+
 
 
 
